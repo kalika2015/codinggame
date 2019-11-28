@@ -1,14 +1,11 @@
 function closestToZero(numbers){
 
-
-
 	short(numbers);
 
 	let clospos = minPositive(numbers);
+  let closneg = maxNegative(numbers);
 
-    let closneg = maxNegative(numbers);
-
-    document.write(distanceToZero(closneg,clospos));
+  return distanceToZero(closneg,clospos);
 
 }
 
@@ -52,9 +49,9 @@ function SizeNegative(numbers){
 }
 function maxNegative(numbers){
 
-	short(numbers);
+	 short(numbers);
     
-    let val = 0;
+   let val = 0;
     
    for(let i = 0; i< numbers.length; i++){
    		if(numbers[i] < 0){
@@ -90,7 +87,6 @@ function minPositive(numbers){
     
     return min;
     
-
 }
 function distanceToZero(v1,v2){
   let vabs = Math.abs(v1);
