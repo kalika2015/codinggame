@@ -30,10 +30,9 @@ function short(numbers){
 
 }
 function SizeNegative(numbers){
-
-	short(numbers);
+	 short(numbers);
     
-    let val = 0;
+   let val = 0;
     
    for(let i = 0; i< numbers.length; i++){
    		if(numbers[i] < 0){
