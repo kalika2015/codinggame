@@ -1,6 +1,8 @@
+ function helloProperties(obj) {
  var elements = [];
   var template = "Hello";
-  var obj = {
+
+    obj = {
     john: 12,
     brian: true,
     doe: 'hi',
@@ -10,4 +12,7 @@
 for (const [key, value] of Object.entries(obj)) {
    
      elements.push(template+"-"+key);
+}
+
+
 }
